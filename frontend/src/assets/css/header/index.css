@@ -10,6 +10,7 @@
 
 .header_logo{
     width: 10%;
+    cursor: pointer;
 }
 
 .header_links_container{
