@@ -1,0 +1,8 @@
+{
+  "short_name": "Testa Para Estágio 11/01",
+  "name": "Relação entre dias e valores",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
