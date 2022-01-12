@@ -2,33 +2,11 @@ import React from "react";
 import Typography from "@mui/material/Typography"
 import "../../assets/css/home/index.css"
 import { Button } from "@mui/material";
-import API_URL from '../../util/api'
-import {useEffect} from "react";
-import axios from 'axios';
+
 
 
 const Index = ({onButtonClick}) =>{
 
-    async function requestData(){
-        console.log("aqui")
-         axios({
-            url: API_URL +"/faturamento/todos",
-            method: "POST"
-            }
-        ).then((response)=>{
-            localStorage.set("data", JSON.stringify(response.data));
-        }).catch((error)=>{
-
-        })
-    }
-
-    useEffect(()=>{
-        if(localStorage.getItem("data") === null){
-            requestData();  
-            console.log(localStorage.getItem("data"))   
-        }else console.log(localStorage.getItem("data"))    
-        
-    }, []);
 
     return(
         <>

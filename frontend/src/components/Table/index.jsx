@@ -2,6 +2,7 @@ import React from "react";
 import "../../assets/css/table/index.css";
 
 const Table =({data})=>{
+
     return(
         <>
             <div className="table-responsive">
@@ -18,7 +19,7 @@ const Table =({data})=>{
                                 return(
                                     <tr key={index}>
                                         <td className="table_data">{value.dia}</td>
-                                        <td className="table_data">{value.valor}</td>
+                                        <td className="table_data">{parseFloat(value.valor).toFixed(2)}</td>
                                     </tr>
                                 )
                             })
