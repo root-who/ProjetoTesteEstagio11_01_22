@@ -22,7 +22,7 @@ const navigation = useNavigate();
             <Header onLogoClick={onLogoClick}></Header>
             <Routes>
                 <Route exact path="/" element={<Index onButtonClick={onButtonClick}/>}></Route>
-                <Route exact path="/dashboard" element={<DashBoard/>}></Route>
+                <Route path="/dashboard" element={<DashBoard/>}></Route>
             </Routes>
             <Footer/>
             </>
