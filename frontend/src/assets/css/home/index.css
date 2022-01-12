@@ -1,0 +1,6 @@
+.container_index{
+    padding: 0 20%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 0 8rem 0;
+}

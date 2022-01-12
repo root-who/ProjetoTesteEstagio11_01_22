@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 
 
 
-const GraficoDeBarras = () =>{
+const GraficoDeBarras = ({data}) =>{
     
     // eslint-disable-next-line no-unused-vars
     const [DadosGrafico, setDadosGrafico] = useState({

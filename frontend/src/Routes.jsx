@@ -10,14 +10,18 @@ const RoutesComponent = ()=>{
 const navigation = useNavigate();
 
     function onLogoClick(){
-        navigation("/")
+        navigation('/');
+    }
+
+    function onButtonClick(){
+        navigation('/dashboard');
     }
 
         return(
             <>
             <Header onLogoClick={onLogoClick}></Header>
             <Routes>
-                <Route exact path="/" element={<Index/>}></Route>
+                <Route exact path="/" element={<Index onButtonClick={onButtonClick}/>}></Route>
                 <Route exact path="/dashboard" element={<DashBoard/>}></Route>
             </Routes>
             <Footer/>
