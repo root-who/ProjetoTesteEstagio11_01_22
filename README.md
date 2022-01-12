@@ -17,6 +17,7 @@
 
 O projeto consiste em uma relação de dias e valores, que serão representados em um gráfico e uma tabela, desenvolvidos em React.js no frontend e Java no Backend, utilizando também Postegree como Banco de Dados, Netlify no Host da aplicação e Heroku para a API.
 
+https://grafico-estagio.netlify.app
 
 ## Ferramentas 🛠
 
@@ -39,3 +40,33 @@ O projeto consiste em uma relação de dias e valores, que serão representados 
  - PostgreeSQL
  - Netlify
  - Heroku
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9cd0f227-79a3-4f3f-b55c-d1b5a482a358/deploy-status)](https://app.netlify.com/sites/reverent-poitras-9264a9/deploys)
+
+## Como executar o projeto :rocket:
+
+### Back end
+Pré-requisitos: Java 8
+
+```bash
+# clonar repositório
+git clone https://github.com/root-who/projetoSpringReactDevSuperior
+# entrar na pasta do projeto backend
+cd backend
+# executar o projeto
+./mvnw spring-boot:run
+```
+
+### Front end web
+Pré-requisitos: npm / yarn
+
+```bash
+# clonar repositório
+git clone https://github.com/root-who/projetoSpringReactDevSuperior
+# entrar na pasta do projeto front end web
+cd frontend
+# instalar dependências
+yarn install
+# executar o projeto
+yarn start
+```
